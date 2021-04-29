@@ -20,7 +20,7 @@ class _AsmaulHusnaState extends State<AsmaulHusna> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.blueGrey[50],
+      backgroundColor: Colors.grey[50],
       appBar: AppBar(
         title: Text('ASMAUL HUSNA',
             style: TextStyle(
@@ -39,7 +39,7 @@ class _AsmaulHusnaState extends State<AsmaulHusna> {
                   itemBuilder: (BuildContext c, int i) {
                     return Card(
                       elevation: 0.0,
-                      color: Colors.blueGrey[100],
+                      color: Colors.yellow[700],
                       child: Padding(
                         padding: const EdgeInsets.all(8.0),
                         child: Column(
@@ -55,7 +55,7 @@ class _AsmaulHusnaState extends State<AsmaulHusna> {
                             ),
                             Text(snapshot.data[i]['latin'],
                                 style: TextStyle(
-                                    color: Colors.blueGrey,
+                                    color: Colors.indigo[900],
                                     fontWeight: FontWeight.bold,
                                     letterSpacing: 1.5)),
                             SizedBox(

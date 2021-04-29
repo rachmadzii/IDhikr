@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter/widgets.dart';
-import 'package:Dhikr/asmaul_husna.dart';
-import 'package:Dhikr/dzikir_pagi.dart';
-import 'package:Dhikr/dzikir_petang.dart';
+import 'package:dhikr/asmaul_husna.dart';
+import 'package:dhikr/dzikir_pagi.dart';
+import 'package:dhikr/dzikir_petang.dart';
 
 void main() => runApp(MyApp());
 
@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Dhikr',
-      theme: ThemeData(primaryColor: Colors.blueGrey[300]),
+      theme: ThemeData(primaryColor: Colors.indigo[900], fontFamily: 'Poppins'),
       home: MyHomePage(title: 'Dhikr'),
       debugShowCheckedModeBanner: false,
     );
@@ -37,11 +37,10 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.blueGrey[50],
+      backgroundColor: Colors.grey[50],
       body: ListView(
         children: <Widget>[
           Stack(
-            overflow: Overflow.visible,
             alignment: Alignment.bottomCenter,
             children: <Widget>[
               Container(
@@ -50,18 +49,13 @@ class _MyHomePageState extends State<MyHomePage> {
                 decoration: BoxDecoration(
                     borderRadius:
                         BorderRadius.only(bottomRight: Radius.circular(40.0)),
-                    color: Colors.blueGrey[800]),
+                    color: Colors.indigo[900]),
               ),
               Positioned(
-                  top: 30.0,
-                  right: 35.0,
+                  top: 42.0,
+                  right: 45.0,
                   child: Row(children: <Widget>[
-                    IconButton(
-                      icon: Icon(Icons.mood, color: Colors.white),
-                      onPressed: () {
-                        print("Button clicked");
-                      },
-                    ),
+                    Icon(Icons.brightness_4_outlined, color: Colors.white),
                   ])),
               Positioned(
                 top: 40.0,
@@ -92,7 +86,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     height: 70.0,
                     width: 320,
                     decoration: BoxDecoration(
-                        color: Colors.blueGrey[400],
+                        color: Colors.yellow[700],
                         borderRadius: BorderRadius.only(
                             topRight: (Radius.circular(35.0)),
                             bottomRight: (Radius.circular(35.0)))),
@@ -128,7 +122,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     height: 70.0,
                     width: 320,
                     decoration: BoxDecoration(
-                        color: Colors.blueGrey[400],
+                        color: Colors.yellow[700],
                         borderRadius: BorderRadius.only(
                             topRight: (Radius.circular(35.0)),
                             bottomRight: (Radius.circular(35.0)))),
@@ -164,7 +158,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     height: 70.0,
                     width: 320,
                     decoration: BoxDecoration(
-                        color: Colors.blueGrey[400],
+                        color: Colors.yellow[700],
                         borderRadius: BorderRadius.only(
                             topRight: (Radius.circular(35.0)),
                             bottomRight: (Radius.circular(35.0)))),

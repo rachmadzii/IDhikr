@@ -1,4 +1,4 @@
-name: Dhikr
+name: dhikr
 description: A new Flutter project.
 
 # The following defines the version and build number for your application.
@@ -27,7 +27,13 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  flutter_launcher_icons: "^0.7.0"
 
+flutter_icons:
+  ios: true
+  android: true
+  image_path_ios: "assets/ic_launcher.png"
+  image_path_android: "assets/ic_launcher.png"
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -57,11 +63,10 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
-  # fonts:
-  #   - family: Schyler
-  #     fonts:
-  #       - asset: fonts/Schyler-Regular.ttf
-  #       - asset: fonts/Schyler-Italic.ttf
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: assets/Poppins-Regular.ttf
   #         style: italic
   #   - family: Trajan Pro
   #     fonts:

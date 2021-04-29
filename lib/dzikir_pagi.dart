@@ -21,10 +21,10 @@ class _DzikirPagiState extends State<DzikirPagi> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.blueGrey[50],
+      backgroundColor: Colors.grey[50],
       appBar: AppBar(
         title: Text('DZIKIR PAGI',
-        style: TextStyle(
+            style: TextStyle(
                 fontWeight: FontWeight.bold,
                 fontSize: 18.0,
                 letterSpacing: 3.0)),
@@ -49,20 +49,23 @@ class _DzikirPagiState extends State<DzikirPagi> {
                             children: <Widget>[
                               Text(
                                 snapshot.data[i]['arabic'],
-                                style: TextStyle(fontSize: 24.5, height: 1.15),
+                                style: TextStyle(fontSize: 22.0, height: 1.2),
                                 textAlign: TextAlign.end,
                               ),
                               SizedBox(
                                 height: 20.0,
                               ),
                               Text(snapshot.data[i]['latin'],
-                              style: TextStyle(fontSize: 16.0, height: 1.2, color: Colors.blueGrey,
-                                    fontWeight: FontWeight.bold)),
+                                  style: TextStyle(
+                                      fontSize: 14.0,
+                                      height: 1.4,
+                                      color: Colors.blue[900])),
                               SizedBox(
                                 height: 20.0,
                               ),
                               Text(snapshot.data[i]['translation'],
-                              style: TextStyle(fontSize: 16.0, height: 1.2)),
+                                  style:
+                                      TextStyle(fontSize: 14.0, height: 1.4)),
                             ],
                           ),
                         )
