@@ -61,7 +61,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 top: 40.0,
                 left: 25.0,
                 child: Text(
-                  "DHIKR-I",
+                  "I-DHIKR",
                   style: TextStyle(
                       color: Colors.white,
                       fontWeight: FontWeight.bold,
