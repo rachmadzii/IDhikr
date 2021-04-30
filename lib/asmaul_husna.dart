@@ -50,21 +50,17 @@ class _AsmaulHusnaState extends State<AsmaulHusna> {
                               snapshot.data[i]['arabic'],
                               style: TextStyle(fontSize: 26.0),
                             ),
-                            SizedBox(
-                              height: 10.0,
-                            ),
+                            SizedBox(height: 10.0),
                             Text(snapshot.data[i]['latin'],
                                 style: TextStyle(
                                     color: Colors.indigo[900],
                                     fontWeight: FontWeight.bold,
+                                    fontSize: 13.0,
                                     letterSpacing: 1.5)),
-                            SizedBox(
-                              height: 10.0,
-                            ),
-                            Text(
-                              snapshot.data[i]['translation_id'],
-                              textAlign: TextAlign.center,
-                            ),
+                            SizedBox(height: 10.0),
+                            Text(snapshot.data[i]['translation_id'],
+                                textAlign: TextAlign.center,
+                                style: TextStyle(fontSize: 12.0)),
                           ],
                         ),
                       ),
