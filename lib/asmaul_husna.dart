@@ -52,6 +52,7 @@ class _AsmaulHusnaState extends State<AsmaulHusna> {
                             ),
                             SizedBox(height: 10.0),
                             Text(snapshot.data[i]['latin'],
+                                textAlign: TextAlign.center,
                                 style: TextStyle(
                                     color: Colors.indigo[900],
                                     fontWeight: FontWeight.bold,
